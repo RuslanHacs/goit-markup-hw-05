@@ -32,7 +32,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-70%);
+    transform: translateX(-50%) translateY(-95%);
     opacity: 0;
     max-width: 408px;
     width: 100%;
@@ -47,7 +47,7 @@
 }
 
 .backdrop.is-open .modal {
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-46%);
     opacity: 1;
 
     transition-delay: 300ms;
@@ -63,6 +63,14 @@
     letter-spacing: 0.04em;
     color: #fff;
 }
+
+.btn-style.btn-field:hover,
+.btn-style.btn-field:focus {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #404bbf;
+}
+
+
 
 .close-btn {
     position: absolute;
@@ -122,17 +130,17 @@
 
 .modal-form-field {
 
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16667;
-    letter-spacing: 0.04em;
-    color: #8e8f99;
+
 
     margin-bottom: 8px;
 }
 
 .modal-form-label {
-
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
 
 
     margin-bottom: 4px;
@@ -220,34 +228,69 @@
     margin-top: 16px;
 }
 
-.modal-form-policy {}
+.modal-form-policy {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Відступ між квадратом та текстом */
+    cursor: pointer;
+    user-select: none;
 
-.modal-form-checbox {
+
+}
+
+.modal-form-checkbox {
+    /* Стилізуємо кастомний квадрат (іконку-обгортку) */
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 14px;
     height: 14px;
     border-radius: 2px;
-    border: 0.88px solid rgba(46, 47, 66, 0.4);
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chechbox:checked+.modal-form-checbox {
+.checkbox-text {}
+
+/* Коли чекбокс активний (checked) — фарбуємо квадрат */
+.checkbox:checked+.modal-form-policy .modal-form-checkbox {
+    background-color: #404bbf;
+    /* Колір фону активного чекбоксу */
+    border-color: #404bbf;
+}
+
+/* Ефект фокусу для клавіатури */
+.checkbox:focus-visible+.modal-form-policy .modal-form-checkbox {
+    outline: 2px solid #4d5ae5;
+    outline-offset: 2px;
+}
+
+
+.checkbox:checked+.modal-form-checkbox {
     border-color: transparent;
     background-color: #fff;
 
 }
 
-.modal-form-chechbox-icon {
+.modal-form-checkbox-icon {
     color: #fff;
+    /* Колір самої галочки всередині */
     opacity: 0;
+    /*приховуємо іконку*/
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.chechbox:checked+.modal-form-checbox .modal-form-chechbox-icon {
+/*.checkbox:checked+.modal-form-checkbox .modal-form-checkbox-icon {
     opacity: 1;
     border-radius: 2px;
     color: #404bbf;
     border: 1px solid #404bbf;
+}*/
+/* Коли чекбокс активний — робимо SVG-іконку видимою */
+.checkbox:checked+.modal-form-policy .modal-form-checkbox .modal-form-checkbox-icon {
+    opacity: 1;
 }
 
 .modal-form-link {
