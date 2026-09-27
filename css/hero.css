@@ -22,7 +22,7 @@
     margin-right: auto;
 }
 
-.btn-link {}
+
 
 .btn-hero {
     margin-top: 48px;
@@ -30,7 +30,7 @@
 
 }
 
-.btn-link:hover,
-.btn-link:focus {
+.btn-hero:hover,
+.btn-hero:focus {
     background: #404bbf;
 }

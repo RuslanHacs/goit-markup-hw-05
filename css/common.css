@@ -96,3 +96,17 @@ img {
     letter-spacing: 0.02em;
     color: #fff;
 }
+
+/* --- Спільні стилі для ВСІХ логотипів на сайті (і в хедері, і в футері) --- */
+.logo-all {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    /* Прибирає дефолтне підкреслення посилання */
+    display: inline-block;
+    /* Щоб марджини та падінги працювали коректно */
+}
