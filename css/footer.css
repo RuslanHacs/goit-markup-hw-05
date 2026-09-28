@@ -319,7 +319,7 @@
 /* --- Блок Соцмереж --- */
 .footer-social-block {
     margin-right: 80px;
-    /* Додано гарний відступ між соцмережами та формою */
+    /* відступ між соцмережами та формою */
 }
 
 .footer-caption {
@@ -362,7 +362,7 @@
 
 .social-icons {
     color: #f4f4fd;
-    /* Використовуємо fill для надійного фарбування іконки */
+    /* Використовуємо color для фарбування іконки */
 }
 
 /* --- Форма підписки у футері --- */
@@ -384,7 +384,7 @@
     padding-left: 16px;
     background-color: transparent;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #ffffff;
     outline: transparent;
@@ -396,9 +396,9 @@
 }
 
 .footer-form-input::placeholder {
-    color: #ffffff;
+    color: #ffff;
     font-size: 12px;
-    line-height: 2;
+    line-height: 1.17;
     letter-spacing: 0.04em;
 }
 
@@ -407,8 +407,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 24px;
-    /* Збільшено до 24px за макетом WebStudio */
+    gap: 16px;
+    /* Збільшено до 16px за макетом WebStudio */
     min-width: 165px;
     height: 40px;
     padding: 8px 24px;
