@@ -88,14 +88,7 @@ img {
 
 }
 
-.foot-caption {
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #fff;
-}
 
 /* --- Спільні стилі для ВСІХ логотипів на сайті (і в хедері, і в футері) --- */
 .logo-all {
@@ -106,7 +99,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    /* Прибирає дефолтне підкреслення посилання */
+
     display: inline-block;
     /* Щоб марджини та падінги працювали коректно */
 }
