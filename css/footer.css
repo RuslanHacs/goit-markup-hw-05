@@ -62,7 +62,7 @@
 }
 
 .foot-social-list {
-    display: inline-flexgit;
+    display: inline-flex;
 
     gap: 16px;
     width: 208px;
